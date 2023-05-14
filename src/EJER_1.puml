@@ -1,0 +1,10 @@
+@startuml
+
+:Cliente: --> (Meter dinero)
+:Cliente: --> (Pedir Azucar)
+:Cliente: --> (Pedir Producto)
+:Cliente: --> (Cancelar)
+(Pedir Producto) ..> (Devolver dinero): <<include>>
+(Cancelar) ..> (Devolver dinero): <<include>>
+
+@enduml
