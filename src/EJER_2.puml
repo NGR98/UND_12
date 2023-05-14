@@ -1,0 +1,11 @@
+@startuml
+
+:Cliente: -- (Identificarse)
+(Identificarse) <.. (Registrarse): <<Extends>>
+:Cliente: -- (Pagar)
+(Pagar) <|-- (Pagar con tarjeta)
+(Pagar) <|-- (Pagar con transefrencia)
+:Cliente: --> (Elegir mensajero)
+:Cliente: --> (Confirmar)
+
+@enduml
